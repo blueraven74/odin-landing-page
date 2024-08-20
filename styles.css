@@ -6,6 +6,8 @@
 body{
   display: flex;
   flex-direction: column;
+  min-height:100vh;
+  justify-content: space-between;
 }
 .header, .footer{
   padding-top:16px;
@@ -13,6 +15,7 @@ body{
   display: flex;
   justify-content: space-between;
   background-color: #1F2937;
+  color:#e5e7eb;
 }
 .header{
   justify-content: space-around;
@@ -62,11 +65,13 @@ body{
   width: 320px;
   background-color: #e5e7eb;
 }
+#hero button, #hero a{
+  width:80px;
+}
 #hero button{
   background-color: rgb(102, 102, 249);
   color:#e5e7eb;
   padding: 8px;
-  width:80px;
   border-radius: 8px;
   border:solid 1px black;
   font-weight: bold;
