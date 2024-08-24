@@ -1,5 +1,5 @@
 *{
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Roboto, Helvetica, sans-serif;
   padding:0;
   margin:0;
 }
@@ -7,13 +7,20 @@ body{
   display: flex;
   flex-direction: column;
   min-height:100vh;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+.hor-container{
+  display:flex;
+}
+.ver-container{
+  display: flex;
+  flex-direction: column;
 }
 .header, .footer{
   padding-top:16px;
   padding-bottom:16px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-color: #1F2937;
   color:#e5e7eb;
 }
@@ -79,4 +86,31 @@ body{
 #hero button:hover{
   background-color: rgb(24, 39, 150);
   cursor: pointer;
+}
+.content{
+  flex:1;
+  display:flex;
+  flex-direction: column;
+}
+#content-num1{
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 24px;
+  text-align:center; 
+  font-weight: 750;
+  justify-content: center;
+  gap:32px;
+}
+#content-num1 .hor-container{
+  display: flex;
+  justify-content: center;
+  gap:32px;
+}
+#content-num1 .hor-container figure{
+  font-size: small;
+  font-weight: 500;
+}
+#content-num1 img{
+  border:solid 3px rgb(101, 101, 164);
+  border-radius: 10%;
 }
